@@ -1,0 +1,133 @@
+<title>Faith Tycoon Support</title>
+<style>
+  :root{
+    --bg:#FAF5E9;
+    --surface:#FFFFFF;
+    --ink:#2E1F14;
+    --ink-soft:#6B5A45;
+    --rule:#E3D6BC;
+    --accent:#8C6412;
+    --accent-deep:#5C4009;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1B140D;
+      --surface:#241B12;
+      --ink:#F3E7C9;
+      --ink-soft:#C9B48E;
+      --rule:#3A2E1E;
+      --accent:#E0B94A;
+      --accent-deep:#F3CE72;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1B140D;
+    --surface:#241B12;
+    --ink:#F3E7C9;
+    --ink-soft:#C9B48E;
+    --rule:#3A2E1E;
+    --accent:#E0B94A;
+    --accent-deep:#F3CE72;
+    color-scheme: dark;
+  }
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    margin:0;
+    padding-inline:16px;
+    font-family:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    line-height:1.65;
+  }
+  .page{ max-width:680px; margin:0 auto; padding-block:56px 80px; }
+  header{ display:flex; align-items:center; gap:14px; margin-bottom:36px; }
+  .crest{
+    width:44px; height:44px; border-radius:50%; flex:0 0 auto;
+    background: radial-gradient(circle at 50% 42%, #FFE08C 0%, #C98A2C 55%, #3A1E12 100%);
+    display:flex; align-items:center; justify-content:center;
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+  .crest::before{
+    content:"+"; color:#FFF3D6; font-family:'Cinzel', serif; font-weight:700;
+    font-size:22px; line-height:1; transform:translateY(-1px);
+  }
+  .kicker{
+    font-family:'Inter', system-ui, sans-serif; text-transform:uppercase;
+    letter-spacing:0.12em; font-size:11px; color:var(--ink-soft);
+  }
+  h1{
+    font-family:'Cinzel', serif; font-weight:700;
+    font-size:clamp(28px, 5vw, 38px); margin:2px 0 0; text-wrap:balance;
+  }
+  .lede{
+    font-size:17px; border-left:3px solid var(--accent);
+    padding-left:16px; margin:22px 0 44px;
+  }
+  section{ margin-bottom:32px; }
+  h2{
+    font-family:'Cinzel', serif; font-weight:600; font-size:19px;
+    border-bottom:1px solid var(--rule); padding-bottom:10px; margin:0 0 14px;
+  }
+  p{ margin:0 0 12px; }
+  .card{
+    background:var(--surface); border:1px solid var(--rule);
+    border-radius:10px; padding:18px 20px;
+  }
+  .contact{ font-family:'Inter', system-ui, sans-serif; font-size:15px; }
+  .contact a{ color:var(--accent-deep); text-decoration:none; border-bottom:1px solid currentColor; }
+  footer{
+    margin-top:56px; padding-top:20px; border-top:1px solid var(--rule);
+    font-family:'Inter', system-ui, sans-serif; font-size:12px; color:var(--ink-soft);
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500&display=swap">
+
+<div class="page">
+  <header>
+    <div class="crest" aria-hidden="true"></div>
+    <div>
+      <div class="kicker">Faith Tycoon</div>
+      <h1>Support</h1>
+    </div>
+  </header>
+
+  <p class="lede">
+    Questions, bug reports, or feedback about Faith Tycoon — all welcome
+    here.
+  </p>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>The fastest way to reach us:</p>
+      <p><a href="mailto:bibleconquest@gmail.com">bibleconquest@gmail.com</a></p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Common questions</h2>
+    <div class="card">
+      <p><strong>Is my progress saved?</strong><br>
+      Yes — automatically, on your device. There's no account to lose
+      access to.</p>
+      <p><strong>Do I need an internet connection?</strong><br>
+      No, Faith Tycoon plays fully offline. An internet connection is only
+      used to show the optional rewarded ads.</p>
+      <p style="margin-bottom:0"><strong>How do I report a bug?</strong><br>
+      Email the address above with what happened and, if you can, what
+      device and iOS/Android version you're using.</p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Privacy</h2>
+    <p>
+      See our <a href="index.html" style="color:var(--accent-deep)">Privacy Policy</a>
+      for details on what data Faith Tycoon does (and doesn't) collect.
+    </p>
+  </section>
+
+  <footer>
+    Faith Tycoon — a biblical-themed idle clicker game.
+  </footer>
+</div>
