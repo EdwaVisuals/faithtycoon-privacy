@@ -1,0 +1,242 @@
+<title>Faith Tycoon Privacy</title>
+<style>
+  :root{
+    --bg:#FAF5E9;
+    --surface:#FFFFFF;
+    --ink:#2E1F14;
+    --ink-soft:#6B5A45;
+    --rule:#E3D6BC;
+    --accent:#8C6412;
+    --accent-deep:#5C4009;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --bg:#1B140D;
+      --surface:#241B12;
+      --ink:#F3E7C9;
+      --ink-soft:#C9B48E;
+      --rule:#3A2E1E;
+      --accent:#E0B94A;
+      --accent-deep:#F3CE72;
+      color-scheme: dark;
+    }
+  }
+  :root[data-theme="dark"]{
+    --bg:#1B140D;
+    --surface:#241B12;
+    --ink:#F3E7C9;
+    --ink-soft:#C9B48E;
+    --rule:#3A2E1E;
+    --accent:#E0B94A;
+    --accent-deep:#F3CE72;
+    color-scheme: dark;
+  }
+
+  body{
+    background:var(--bg);
+    color:var(--ink);
+    margin:0;
+    padding-inline:16px;
+    font-family:'Source Serif 4', Georgia, 'Times New Roman', serif;
+    line-height:1.65;
+  }
+  .page{
+    max-width:680px;
+    margin:0 auto;
+    padding-block:56px 80px;
+  }
+  header{
+    display:flex;
+    align-items:center;
+    gap:14px;
+    margin-bottom:40px;
+  }
+  .crest{
+    width:44px;
+    height:44px;
+    border-radius:50%;
+    flex:0 0 auto;
+    background:
+      radial-gradient(circle at 50% 42%, #FFE08C 0%, #C98A2C 55%, #3A1E12 100%);
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    box-shadow: 0 0 0 1px var(--rule);
+  }
+  .crest::before{
+    content:"+";
+    color:#FFF3D6;
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    font-size:22px;
+    line-height:1;
+    transform:translateY(-1px);
+  }
+  .kicker{
+    font-family:'Inter', system-ui, sans-serif;
+    text-transform:uppercase;
+    letter-spacing:0.12em;
+    font-size:11px;
+    color:var(--ink-soft);
+  }
+  h1{
+    font-family:'Cinzel', serif;
+    font-weight:700;
+    font-size:clamp(28px, 5vw, 38px);
+    margin:2px 0 0;
+    text-wrap:balance;
+  }
+  .updated{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:13px;
+    color:var(--ink-soft);
+    margin-top:26px;
+  }
+  .lede{
+    font-size:17px;
+    color:var(--ink);
+    border-left:3px solid var(--accent);
+    padding-left:16px;
+    margin:22px 0 44px;
+  }
+  section{
+    margin-bottom:36px;
+  }
+  h2{
+    font-family:'Cinzel', serif;
+    font-weight:600;
+    font-size:19px;
+    letter-spacing:0.01em;
+    border-bottom:1px solid var(--rule);
+    padding-bottom:10px;
+    margin:0 0 14px;
+  }
+  p{ margin:0 0 12px; color:var(--ink); }
+  p.soft{ color:var(--ink-soft); font-size:15px; }
+  ul{ margin:0 0 12px; padding-left:22px; }
+  li{ margin-bottom:8px; }
+  .card{
+    background:var(--surface);
+    border:1px solid var(--rule);
+    border-radius:10px;
+    padding:18px 20px;
+  }
+  .contact{
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:15px;
+  }
+  .contact a{ color:var(--accent-deep); text-decoration:none; border-bottom:1px solid currentColor; }
+  .placeholder{
+    background: color-mix(in srgb, var(--accent) 14%, transparent);
+    border:1px dashed var(--accent);
+    border-radius:6px;
+    padding:2px 6px;
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:0.92em;
+  }
+  footer{
+    margin-top:56px;
+    padding-top:20px;
+    border-top:1px solid var(--rule);
+    font-family:'Inter', system-ui, sans-serif;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&family=Inter:wght@400;500&display=swap">
+
+<div class="page">
+  <header>
+    <div class="crest" aria-hidden="true"></div>
+    <div>
+      <div class="kicker">Faith Tycoon</div>
+      <h1>Privacy Policy</h1>
+    </div>
+  </header>
+
+  <p class="updated">Last updated: September 25, 2026</p>
+
+  <p class="lede">
+    Faith Tycoon is an idle clicker game. This policy explains, plainly, what
+    happens to your information when you play it — and today, the short
+    version is: your progress stays on your device, and we don't collect
+    anything about you.
+  </p>
+
+  <section>
+    <h2>What we collect</h2>
+    <p>
+      Faith Tycoon does not collect, store, or transmit any personal
+      information. The app does not require an account, does not ask for
+      your name, email, or location, and does not connect to any server of
+      ours — there isn't one.
+    </p>
+  </section>
+
+  <section>
+    <h2>Where your progress lives</h2>
+    <div class="card">
+      <p>
+        Your Faith, Grace, Gold, unlocked worlds, managers, and chests are
+        saved locally on your own device, using your operating system's
+        standard app-storage mechanism. This save data never leaves your
+        device, is never seen by us, and is deleted automatically if you
+        uninstall the app.
+      </p>
+    </div>
+  </section>
+
+  <section>
+    <h2>Third-party services</h2>
+    <p>
+      The current version of Faith Tycoon does not include advertising,
+      analytics, or in-app purchases, so no third-party service receives
+      any data from the app. If that changes in a future update — for
+      example, adding optional rewarded ads — this policy will be updated
+      first, and the new section will name the service and what it
+      collects.
+    </p>
+  </section>
+
+  <section>
+    <h2>Children's privacy</h2>
+    <p>
+      Faith Tycoon does not knowingly collect personal information from
+      anyone, including children. Because the game requires no account and
+      no personal information to play, there is nothing to collect
+      regardless of the player's age.
+    </p>
+  </section>
+
+  <section>
+    <h2>Your device's own permissions</h2>
+    <p class="soft">
+      Faith Tycoon does not request access to your camera, microphone,
+      contacts, photos, or location. Sound effects and music play using
+      your device's normal audio output; nothing about your device's
+      hardware is read or recorded.
+    </p>
+  </section>
+
+  <section>
+    <h2>Changes to this policy</h2>
+    <p>
+      If this policy changes — most likely because a future version adds
+      ads, analytics, or a cloud save — the "last updated" date above will
+      change, and the new version will describe exactly what's collected
+      and why.
+    </p>
+  </section>
+
+  <section>
+    <h2>Contact</h2>
+    <div class="card contact">
+      <p>Questions about this policy or the app can be sent to:</p>
+      <p><a href="mailto:bibleconquest@gmail.com">bibleconquest@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer>
+    Faith Tycoon — a biblical-themed idle clicker game.
+  </footer>
+</div>
